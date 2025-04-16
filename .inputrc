@@ -1,0 +1,9 @@
+################################################################################
+# File:        .inputrc                                                        #
+# Created by:  DG                                                              #
+# Date:        2025-04-15                                                      #
+# Description: This ZSH configuration file is using by Debian VPS              #
+################################################################################
+
+set bell-style none
+

@@ -1,0 +1,12 @@
+################################################################################
+# File        : .zfunctions                                                    #
+# Created by  : DG                                                             #
+# Date        : 2025-04-15                                                     #
+# Description : This ZSH configuration file is using by Debian VPS             #
+################################################################################
+
+function history_clean() {
+# Clear history file
+  history -p
+}
+

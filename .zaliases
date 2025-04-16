@@ -1,0 +1,40 @@
+################################################################################
+# File        : .zaliases                                                      #
+# Created by  : DG                                                             #
+# Date        : 2025-04-15                                                     #
+# Description : This ZSH configuration file is using by Debian VPS             #
+################################################################################
+
+##########
+#  Main  #
+##########
+alias q='exit'
+alias h="history_clean"
+alias md='mkdir -pv'
+alias rm='rm -vI'
+alias mv='mv -vi'
+alias cp='cp -vi'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias ls='ls --color=auto --group-directories-first'
+alias l='ls -1'
+alias la='ls -lhAF'               # all but . and ..
+alias ll='ls -lhF'                # long list
+alias lt="ls -lhtrFG"
+alias l.="ls -lhtrdFG .*"
+
+##########
+# Custom #
+##########
+alias v='vim'
+alias vv='nvim'
+alias wget='wget --no-hsts'
+alias o='explorer.exe .'
+alias a='tmux a'
+alias aa='. .venv/bin/activate'
+alias d='deactivate'
+alias reset_p='find . -type f -exec chmod 664 {} + -o -type d -exec chmod 775 {} +'
+alias bat='batcat'
+
