@@ -1,0 +1,26 @@
+" **************************************************************************** "
+" File        : vimrc                                                          "
+" Created by  : Created by (c)2025 DG                                          "
+" Date        : 2025-04-17                                                     "
+" Description : This VIM configuration file is using by Debian VPS             "
+" **************************************************************************** "
+
+color desert
+set nocompatible
+set nowrap
+set viminfo="NONE"
+syntax on
+
+" F8: Toggle list (display unprintable characters)
+noremap <F8> :set list!<cr>
+
+map  <leader>s      :update<CR>
+imap <leader>s <Esc>:update<CR>
+
+set visualbell
+set t_vb=
+
+set ttyfast      " U got a fast terminal
+set ttyscroll=3
+set lazyredraw   " To avoid scrolling problems
+
