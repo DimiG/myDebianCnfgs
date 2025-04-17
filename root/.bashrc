@@ -32,7 +32,9 @@ alias rm='rm -vI'
 alias cp='cp -vi'
 alias mv='mv -vi'
 alias md='mkdir -pv'
+alias bat='batcat'
 alias h='history -c'
+alias v='vim'
 alias q='exit'
 
 alias l='ls $LS_OPTIONS -1'
@@ -60,6 +62,15 @@ alias ....='cd ../../..'
 # SET USER DEFINED SETTINGS #
 #############################
 
+# VIM
 export EDITOR="vim"
+
+# BAT
+export BAT_PAGER="never"
+export BAT_THEME="Visual Studio Dark+"
+
+# Less
+export LESSHISTFILE=-
+
 unset HISTFILE
 
