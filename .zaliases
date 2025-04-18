@@ -1,7 +1,7 @@
 ################################################################################
 # File        : .zaliases                                                      #
 # Created by  : DG                                                             #
-# Date        : 2025-04-15                                                     #
+# Date        : 2025-04-18                                                     #
 # Description : This ZSH configuration file is using by Debian VPS             #
 ################################################################################
 
@@ -37,4 +37,21 @@ alias aa='. .venv/bin/activate'
 alias d='deactivate'
 alias reset_p='find . -type f -exec chmod 664 {} + -o -type d -exec chmod 775 {} +'
 alias bat='batcat'
+alias reboot='doas /usr/sbin/reboot'
+
+###########################
+# Docker specific aliases #
+###########################
+
+# Get container process
+alias dps="docker ps"
+
+# Get process included stop container
+alias dpa="docker ps -a"
+
+# Get images
+alias di="docker images"
+
+# Stop and Remove all containers
+alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
 

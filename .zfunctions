@@ -1,7 +1,7 @@
 ################################################################################
 # File        : .zfunctions                                                    #
 # Created by  : DG                                                             #
-# Date        : 2025-04-15                                                     #
+# Date        : 2025-04-18                                                     #
 # Description : This ZSH configuration file is using by Debian VPS             #
 ################################################################################
 
@@ -9,4 +9,14 @@ function history_clean() {
 # Clear history file
   history -p
 }
+
+#############################
+# Docker specific functions #
+#############################
+
+# Remove all containers
+drm() { docker rm $(docker ps -a -q); }
+
+# Remove all images
+dri() { docker rmi $(docker images -q); }
 
