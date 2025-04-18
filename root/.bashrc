@@ -1,7 +1,7 @@
 ################################################################################
 # File        : .bashrc                                                        #
-# Created by  : Created by (c)2025 DG                                          #
-# Date        : 2025-04-17                                                     #
+# Created by  : DG                                                             #
+# Date        : 2025-04-18                                                     #
 # Description : This is BASH configuration file is using by Debian VPS         #
 ################################################################################
 
