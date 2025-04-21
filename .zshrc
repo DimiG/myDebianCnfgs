@@ -1,7 +1,7 @@
 ################################################################################
 # File        : .zshrc                                                         #
 # Created by  : DG                                                             #
-# Date        : 2025-04-15                                                     #
+# Date        : 2025-04-25                                                     #
 # Description : This ZSH configuration file is using by Debian VPS             #
 ################################################################################
 
@@ -73,6 +73,15 @@ fi
 # Some people use a different file for functions
 if [ -f "${HOME}/.zfunctions" ]; then
   source "${HOME}/.zfunctions"
+fi
+
+# ------------------------------------------------------------------------------
+# Custom Functions
+# ------------------------------------------------------------------------------
+
+# Some people use a different file for custom functions
+if [ -f "${HOME}/.zcustom" ]; then
+  source "${HOME}/.zcustom"
 fi
 
 # ------------------------------------------------------------------------------
