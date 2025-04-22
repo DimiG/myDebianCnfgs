@@ -64,6 +64,10 @@ complete -F _root_command doas
 ```
 complete -cf doas
 ```
+* Don't forget install [NTP][ntp] service as `root`:  
+```
+apt install ntp
+```
 **P.S.** I will try to automate this task a bit in the future.
 
 ***Requires :*** Fresh installed [Debian][debian] **Linux** [distro][distro].
@@ -81,3 +85,4 @@ This code has been written by **©2025 DG**
 [vim]:https://en.wikipedia.org/wiki/Vim_(text_editor)
 [sudo]:https://en.wikipedia.org/wiki/Sudo
 [doas]:https://wiki.gentoo.org/wiki/Doas
+[ntp]:https://en.wikipedia.org/wiki/Network_Time_Protocol
